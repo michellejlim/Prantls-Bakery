@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Prantl's Bakery'</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript">
+  	$(function(){
+  		$('#container-graph1').highcharts({
+			
+  			title: {
+  			        text: 'Popular Times for Shadyside (avg per day)',
+  			    },
+  				
+  				xAxis:{
+  					title:{
+  						text: 'Hour'
+  					},
+  					categories:['7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm']
+  				},
+
+
+  			    yAxis: {
+  			        title: {
+  			            text: 'Average people per day'
+  			        },
+  			    },
+  				tooltip: {
+  					valueSuffix:'Avg people per day(on average)'
+					
+  				},
+  			    legend: {
+  			        layout: 'vertical',
+  			        align: 'right',
+  			        verticalAlign: 'middle'
+  			    },
+
+
+  			    series: [{
+  			        name: 'Shadyside',
+  			        data: [10,8,24,5,7,32,16,18,27,39,32]
+  			    }]
+  		});
+  	});
+  	</script>
+	  <script type="text/javascript">
+	  	$(function(){
+	  		$('#container-graph2').highcharts({
+			
+	  			title: {
+	  			        text: 'Popular Times for Downtown (avg per day)',
+	  			    },
+  				
+	  				xAxis:{
+	  					title:{
+	  						text: 'Hour'
+	  					},
+	  					categories:['7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm']
+	  				},
+
+
+	  			    yAxis: {
+	  			        title: {
+	  			            text: 'Average people per day'
+	  			        },
+	  			    },
+	  				tooltip: {
+	  					valueSuffix:'Avg people per day(on average)'
+					
+	  				},
+	  			    legend: {
+	  			        layout: 'vertical',
+	  			        align: 'right',
+	  			        verticalAlign: 'middle'
+	  			    },
+
+
+	  			    series: [{
+	  			        name: 'Downtown',
+	  			        data: [24,12,16,8,11,19,15,18,13,21,35]
+	  			    }]
+	  		});
+	  	});
+	  	</script>
+	  
+	  
+	  
+	  
+	  
+	 
+</head><body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <a class="navbar-brand" href="#"><img width="75" src="images/logo.png"></a>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ol class="nav navbar-nav navbar-right">
+        
+        <li><a href="index.html"><h4>Home</h4></a></li>
+        <li><a href="onlineorder.html"><h4>Online Order</h4></a></li>
+	
+        <li><a href="contact.html"><h4>Contact</h4></a></li>
+		<li><a href="location.html"><h4>Location</h4></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>Celebrations</h4>
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="weddings.html"><h4>Weddings</h4></a></li>
+            <li><a href="birthdays.html"><h4>Birthdays</h4></a></li>
+      
+    </div>
+  </div>
+</nav>
+
+<hr>
+
+<table>
+	
+	<thead>
+		<tr>
+			<th scope="col"><h2>Shadyside</h2></th>
+			<th scope="col"><h2>Downtown</h2></th>
+		</tr>
+		
+	</thead>
+	<tbody>
+		<tr>
+			<td><img src="images/shadyside.png" class="img-rounded" style="width:80%" alt="Image"></td>
+			<td><img src="images/downtown.png" class="img-rounded" style="width:90%" alt="Image"></td>
+		</tr>
+		<tr>
+			<td>Address: 5525 Walnut Street
+Pittsburgh, PA 15232</td>
+			<td>Address: 438 Market Street
+Pittsburgh, PA 15222</td>
+		</tr>
+		<tr>
+			<td>Phone Number: 412-621-2092</td>
+			<td>General information: 412-471-6861</td>
+			
+		</tr>
+		<tr>
+			<td><a href = "mailto:info@prantlsbakery.com" target="_blank">Email Us</a></td>
+			<td><a href = "mailto:infoms@prantlsbakery.com" target="_blank">Email Us</a></td>
+		</tr>
+		<tr>
+			<td>Go to <a href = "http://www.prantlsbakery.com/" target="_blank">Prantl's Bakery</a></td>
+			<td>Go to <a href = "http://www.prantlsbakery.com/" target="_blank">Prantl's Bakery</a></td>
+		</tr>
+		<tr>
+			<td>Hours of Operation: <br> Monday: 9am – 4pm
+<br> Tuesday – Saturday: 7:30am – 6pm
+<br>Sunday: 9am – 4pm</td>
+			<td>Hours of operation: <br> Monday – Friday: 7am – 6pm
+<br> Saturday: 9am – 4pm
+<br>Sunday: 10am – 3pm</td>
+		</td>
+
+
+		<tr>
+			<td>Please use the below map to find our Shadyside store.</td>
+			<td>Please use the below map to find our Downtown store.</td>
+		</tr>
+		<tr>
+			<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069510733938!2d-79.93505694949398!3d40.45159846134171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211a8acdbb5%3A0xdc10f5a40aaa3140!2s5525+Walnut+St%2C+Pittsburgh%2C+PA+15232!5e0!3m2!1sen!2sus!4v1521742095033" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+			<td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.542172543398!2d-80.00427454949434!3d40.44113556197831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15693c48777%3A0xae63e31d08c0531f!2s438+Market+St%2C+Pittsburgh%2C+PA+15222!5e0!3m2!1sen!2sus!4v1521742259957" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+		</tr>		
+		<tr>
+			<td><div id="container-graph1"></div></td>
+			<td><div id="container-graph2"></div></td>
+	
+</table>
+</div>
+
+<footer class="container-fluid text-center">
+	<h3>Connect with us on Social Media!</h3>
+	<div class="col-sm-4">
+		
+		<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><h4>Facebook</h4></a>
+		<a href="https://twitter.com/prantlsbakery" target="_blank"><h4>Twitter</h4></a>
+		<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><h4>Instagram</h4></a><br></div>
+	<div class="col-sm-4">
+		<a href="http://www.prantlsbakery.com/" target="_blank"><h4>Check out Prantl's Website</h4><img src="images/newsletter.png"></a>
+	</div>
+	
+	
+	<div class="col-sm-4">
+		<h4>Check out other pages!</h4>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/index.html" target="_blank"><h5>Home </h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/onlineorder.html" target="_blank"><h5>Online Order</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/contact.html" target="_blank"><h5>Contact</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/location.html" target="_blank"><h5>Location</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/weddings.html" target="_blank"><h5>Weddings</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/birthdays.html" target="_blank"><h5>Birthdays</h5></a>
+  </div>
+  <div class= "col-sm-12">
+ 	 <h5>Citations for current page</h5>
+ 	 <h6>Prantl's website: linked and for image http://www.prantlsbakery.com/about/</h6>
+ 	 <h6>Image:http://www.parmesanprincess.com/2014/04/14/prantls-bakery-in-pittsburgh-named-the-greatest-cake-america-has-ever-made-sweet/</h6>
+ 	 <h6>Article 2:http://triblive.com/local/westmoreland/13303966-74/prantls-bakery-burnt-almond-torte-named-states-best-by-food-network</h6>
+ 	 <h6>Video 1:https://www.youtube.com/watch?v=iLhlZciMfoQ&feature=youtu.be</h6>
+
+  </div>
+</footer>
+
+</body>
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>

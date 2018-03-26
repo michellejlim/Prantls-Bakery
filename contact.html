@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Prantl's Bakery'</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+ <script type="text/javascript" src="js/scripts.js" ></script>
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head><body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img width="75" src="images/logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ol class="nav navbar-nav navbar-right">
+        
+        <li><a href="index.html"><h4>Home</h4></a></li>
+        <li><a href="onlineorder.html"><h4>Online Order</h4></a></li>
+	
+        <li><a href="contact.html"><h4>Contact</h4></a></li>
+		<li><a href="location.html"><h4>Location</h4></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>Celebrations</h4>
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="weddings.html"><h4>Weddings</h4></a></li>
+            <li><a href="birthdays.html"><h4>Birthdays</h4></a></li>
+			
+      
+    </div>
+  </div>
+</nav>
+
+
+<hr>
+
+
+
+
+
+
+<div class="container">
+	
+  <h2>Visitor Inquiry Form</h2> 
+  <h4>Help us get in contact with you!</h4>
+ 
+  <form onsubmit="return validate()" action="mailto: infoneeded@prantlsbakery.com">
+    <fieldset>
+	<label for = "name">Name: (Required)</label>
+	<input type = "name" class = "form-control" id = "name" placeholder = "Enter first and last name" required> 
+</fieldset>
+<fieldset>
+	<label for = "zipcode">Zipcode:</label>
+	<input type="zipcode" class = "form-control" id="zipcode" placeholder = "Enter zipcode" >
+</fieldset>
+<fieldset>
+	<label for = "email">Email Address: (Required)</label>
+	<input type="email" class = "form-control" id="email" placeholder = "Enter email address" required>
+</fieldset>
+<fieldset>
+	<label for="message">Inquiry:</label> <br/>
+		  <textarea id="inquiry" name="inquiry" rows="10" cols="50" maxlength="1000"> </textarea><br/><br/>
+</fieldset>
+<fieldset>
+	<label for="subscribe">Would you like to subscribe to Prantl's mailing list?</label>
+	<br>
+	<input type="checkbox" class="custom-control-input" id = "subscribe">
+	<label class="custom-control-label" for="subscribe">Yes</label>
+</fieldset>
+
+	
+	<br>
+<fieldset>
+    <button type="submit" class="btn btn-default" href='mailto: infoneeded@prantlsbakery.com'>Submit</button>
+</fieldset>
+  </form>
+
+</div>
+
+
+
+
+
+<br></br>
+
+
+
+
+
+
+
+  
+
+<footer class="container-fluid text-center">
+	<h3>Connect with us on Social Media!</h3>
+	<div class="col-sm-4">
+		
+		<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><h4>Facebook</h4></a>
+		<a href="https://twitter.com/prantlsbakery" target="_blank"><h4>Twitter</h4></a>
+		<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><h4>Instagram</h4></a><br></div>
+	<div class="col-sm-4">
+		<a href="http://www.prantlsbakery.com/" target="_blank"><h4>Check out Prantl's Website</h4><img src="images/newsletter.png"></a>
+	</div>
+	
+	
+	<div class="col-sm-4">
+		<h4>Check out other pages!</h4>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/index.html" target="_blank"><h5>Home </h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/onlineorder.html" target="_blank"><h5>Online Order</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/contact.html" target="_blank"><h5>Contact</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/location.html" target="_blank"><h5>Location</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/weddings.html" target="_blank"><h5>Weddings</h5></a>
+		<a href= "file:///Users/michellelim/Desktop/web%20dev%20project/birthdays.html" target="_blank"><h5>Birthdays</h5></a>
+  
+</footer>
+
+</body>
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
